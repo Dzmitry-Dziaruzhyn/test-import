@@ -5,7 +5,8 @@
     "version": "1.0.0",
     "license": "MIT",
     "require": {
-        "magento/framework": "*"
+        "magento/product-community-edition": "2.4.3",
+        "php": "^7.4"
     },
     "autoload": {
         "files": [
