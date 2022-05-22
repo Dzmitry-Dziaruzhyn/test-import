@@ -61,8 +61,8 @@ class CustomerImport extends Command
         $profile = $input->getArgument(self::PROFILE_NAME);
         $source = $input->getArgument(self::SOURCE);
 
-        if (!filesize($source)) {
-            $output->writeln("<error>File not found</error>");
+        if (!is_file($source)) {
+            $output->writeln("<error>File isnot found</error>");
             return;
         }
 
